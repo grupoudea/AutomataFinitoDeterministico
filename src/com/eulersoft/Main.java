@@ -54,8 +54,7 @@ public class Main {
                     case "E":
                         System.out.println("Hay un error en tu expresión");
                         break;
-                    default:
-                        throw new IllegalStateException("No es un caracter permitido: " + estado);
+                    
                 }
             }
         } while (!simbolo.equals("0"));
