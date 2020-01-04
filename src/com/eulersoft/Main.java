@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
     static Simbolo simbolos[] = new Simbolo[6];
     static String simbolo;
+    static StringBuilder expresion= new StringBuilder();
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -13,12 +14,12 @@ public class Main {
         String listaEstados[];
 
         String estado = "OP";
-
         do {
             System.out.println("Escriba el simbolo \n SIMBOLOS PERMITIDOS: (F, V, &, |, !, =) SIN ESPACIOS " +
                     "\n PARA TERMINAR ESCRIBA 0");
             simbolo = scanner.next();
             if (!simbolo.equals("0")) {
+                expresion.append(simbolo);
                 switch (estado) {
                     case "OP":
                         listaEstados = new String[]{"FV", "FV", "E", "E", "!N", "E"};
@@ -58,7 +59,7 @@ public class Main {
                 }
             }
         } while (!simbolo.equals("0"));
-
+        System.out.println("Expresión: "+expresion);
     }
 
     private static String retornarEstado() {

@@ -1,13 +1,16 @@
 ##############################
 ## IntelliJ
 ##############################
-
 *.class
-AutomataFinitoDeterministico
 *.xml
 .idea/workspace.xml
 .idea/vcs.xml
-.idea/vcs.xml
 .idea/workspace.xml
-*.xml
-.idea/workspace.xml
+out/
+AutomataFinitoDeterministico/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+*.class
