@@ -64,11 +64,12 @@ public class Main {
                 return simbolos[i].getEstado();
             }
         }
-        return null;
+        return "E";
     }
 
     static void llenarArreglo(String[] listaSimbolos, String[] listaEstados){
         for (int i = 0; i < simbolos.length; i++) {
+            simbolos[i]= new Simbolo();
             simbolos[i].setSimbolo(listaSimbolos[i]);
             simbolos[i].setEstado(listaEstados[i]);
         }

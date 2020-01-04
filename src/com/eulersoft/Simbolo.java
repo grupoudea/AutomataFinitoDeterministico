@@ -10,6 +10,10 @@ public class Simbolo {
         this.estado = estado;
     }
 
+    public Simbolo() {
+
+    }
+
     public String getSimbolo() {
         return simbolo;
     }
